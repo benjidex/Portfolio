@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benjamin Ille — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">▣</span>
+        <span class="brand-text">Benjamin Ille</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <div class="container mobile-nav-inner">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" aria-label="Role">Frontend • UI/UX • Web Apps</p>
+          <h1 class="headline">Building clean, fast, and delightful web experiences.</h1>
+          <p class="lead">
+            I’m Benjamin Ille - I design and develop responsive websites and interactive interfaces.
+            This portfolio highlights a few projects and the skills behind them.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Highlights">
+            <li>
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Years Coding</div>
+            </li>
+            <li>
+              <div class="stat-value">10+</div>
+              <div class="stat-label">UI Components</div>
+            </li>
+            <li>
+              <div class="stat-value">A11y</div>
+              <div class="stat-label">Accessible by design</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Profile card">
+          <div class="profile-glow" aria-hidden="true"></div>
+          <div class="hero-card-content">
+            <h2 class="card-title">What I work on</h2>
+            <div class="chip-row" aria-label="Skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">UX</span>
+            </div>
+            <p class="card-text">
+              I focus on performance, visual clarity, and micro-interactions that feel smooth.
+            </p>
+
+            <div class="quick-links" role="list">
+              <a class="quick-link" role="listitem" href="#projects">Explore work</a>
+              <a class="quick-link" role="listitem" href="#contact">Let’s talk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Live GitHub repositories pulled directly from my public profile.</p>
+        </div>
+
+        <p class="section-note" id="projects-status">Fetching GitHub projects…</p>
+        <div class="projects-grid" id="project-list" role="list" aria-live="polite">
+          <article class="project-card project-card--placeholder" role="listitem">
+            <div class="project-title">Loading your GitHub projects...</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact" aria-label="Contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Want to collaborate or discuss a project? Send a message and I’ll get back to you.
+          </p>
+
+          <div class="contact-cards" role="list">
+            <div class="contact-card" role="listitem">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div>
+                <h3 class="contact-title">Email</h3>
+                <p class="contact-text">
+                  <a class="link" href="mailto:illebenjamin12@gmail.com">illebenjamin12@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card" role="listitem">
+              <div class="contact-icon" aria-hidden="true">🔗</div>
+              <div>
+                <h3 class="contact-title">Links</h3>
+                <p class="contact-text">
+                  <a class="link" href="https://github.com/benjidex" target="_blank" rel="noreferrer noopener">GitHub</a> • <a class="link" href="#" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card" role="listitem">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <h3 class="contact-title">Location</h3>
+                <p class="contact-text">Remote-friendly • Nigeria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" autocomplete="on" aria-label="Contact form" onsubmit="return false">
+          <h3 class="form-title">Send a message</h3>
+          <label class="field">
+            <span class="field-label">Your name</span>
+            <input class="input" name="name" type="text" placeholder="" required />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Email</span>
+            <input class="input" name="email" type="email" placeholder="" required />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Message</span>
+            <textarea class="input textarea" name="message" placeholder="How can I help?" rows="5" required></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-block" type="submit" aria-disabled="true">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">© <span id="year"></span> Benjamin Ille Portfolio</p>
+      <div class="footer-links" aria-label="Footer links">
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    if (menuBtn && mobileNav) {
+      const toggle = () => {
+        const isHidden = mobileNav.hasAttribute('hidden');
+        menuBtn.setAttribute('aria-expanded', String(isHidden));
+        if (isHidden) mobileNav.removeAttribute('hidden');
+        else mobileNav.setAttribute('hidden', '');
+      };
+
+      menuBtn.addEventListener('click', toggle);
+      mobileNav.addEventListener('click', (e) => {
+        if (e.target && e.target.matches('a')) toggle();
+      });
+    }
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      }
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    const GITHUB_USER = 'benjidex';
+    const repoList = document.getElementById('project-list');
+    const repoStatus = document.getElementById('projects-status');
+
+    async function fetchGitHubProjects() {
+      if (!repoList || !repoStatus) return;
+
+      const endpoint = `https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&per_page=8`;
+      try {
+        const response = await fetch(endpoint, { headers: { Accept: 'application/vnd.github.v3+json' } });
+        if (!response.ok) throw new Error(`GitHub API returned ${response.status}`);
+
+        const repos = await response.json();
+        const filtered = repos
+          .filter(repo => !repo.fork && !repo.archived)
+          .sort((a, b) => b.stargazers_count - a.stargazers_count)
+          .slice(0, 8);
+
+        if (!filtered.length) {
+          repoStatus.textContent = 'No public repositories found. Check your GitHub username or make repositories public.';
+          return;
+        }
+
+        repoStatus.textContent = `Showing ${filtered.length} active GitHub project${filtered.length === 1 ? '' : 's'}.`;
+        repoList.innerHTML = '';
+
+        for (const repo of filtered) {
+          const repoCard = document.createElement('article');
+          repoCard.className = 'project-card';
+          repoCard.setAttribute('role', 'listitem');
+          repoCard.innerHTML = `
+            <div class="project-badge">${repo.private ? 'Private' : 'Repository'}</div>
+            <h3 class="project-title">${repo.name}</h3>
+            <p class="project-desc">${repo.description || 'A GitHub project showcasing code, features, and engineering progress.'}</p>
+            <ul class="project-meta" aria-label="Repository details">
+              <li>${repo.language || 'JavaScript'}</li>
+              <li>⭐ ${repo.stargazers_count}</li>
+              <li>Updated ${new Date(repo.updated_at).toLocaleDateString()}</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-primary" href="${repo.html_url}" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+              <a class="link" href="${repo.html_url}" target="_blank" rel="noreferrer noopener">Open</a>
+            </div>
+          `;
+          repoList.appendChild(repoCard);
+        }
+      } catch (error) {
+        repoStatus.textContent = 'Unable to load GitHub projects right now. Please try again later.';
+        repoList.innerHTML = `
+          <article class="project-card">
+            <div class="project-title">GitHub data is unavailable.</div>
+            <p class="project-desc">Check your GitHub username or network connection.</p>
+          </article>
+        `;
+        console.warn('GitHub project fetch failed:', error);
+      }
+    }
+
+    fetchGitHubProjects();
+  </script>
+</body>
+</html>
